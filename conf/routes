@@ -1,0 +1,28 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Serve index page from public directory
+GET         /                               controllers.FrontendController.index()
+
+# swagger
+GET         /docs/                          controllers.Assets.at(path="/public/swagger-ui", file="index.html")
+GET         /docs/swagger.json              controllers.ApiHelpController.getResources
+GET         /docs/*file                     controllers.Assets.at(path="/public/swagger-ui", file)
+
+# Security actions
+POST        /api/signIn                     controllers.SecurityController.login
+POST        /api/signUp                     controllers.SecurityController.signUp
+POST        /api/restorePassword            controllers.SecurityController.restorePassword
+POST        /api/changePassword             controllers.SecurityController.changePassword
+GET         /api/signOut                    controllers.SecurityController.logout
+
+# User accounts action
+# GET         /api/users/list                 controllers.UserAccountController.listAll
+
+
+# An example route (Prefix all API routes with apiPrefix defined in application.conf)
+GET         /api/summary                    controllers.HomeController.appSummary
+
+# Serve static assets under public directory
+GET     /*file                              controllers.FrontendController.assetOrDefault(file)

@@ -1,0 +1,3 @@
+request.forbidden=Secured resource without authentication requested
+request.unauthorized=User does not have permissions for this request
+user.logged.out=User logged out
