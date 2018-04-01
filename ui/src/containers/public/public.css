@@ -1,0 +1,55 @@
+.public-form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-box-shadow: 0 0 100px rgba(0,0,0,.08);
+    box-shadow: 0 0 100px rgba(0,0,0,.08);
+}
+
+.login-form {
+    margin: -180px 0 0 -180px;
+    width: 360px;
+    height: 360px;
+    padding: 36px;
+}
+
+.restore-password-form {
+    margin: -140px 0 0 -180px;
+    width: 360px;
+    height: 280px;
+    padding: 36px;
+}
+
+.register-form {
+    margin: -240px 0 0 -270px;
+    width: 480px;
+    height: 540px;
+    padding: 36px;
+}
+
+.logo {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 8px;
+}
+.app-logo-label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.login-form-button {
+    width: 100%;
+}
+.login-bottom-nav {
+    width: 100%;
+    text-align: center;
+}

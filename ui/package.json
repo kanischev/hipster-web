@@ -3,14 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.3.1",
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.5",
+    "node-less-chokidar": "^0.1.2",
+    "npm-run-all": "^4.1.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",
     "redux": "^3.7.2",
     "redux-form": "^7.3.0",
-    "redux-saga": "^0.16.0"
+    "redux-saga": "^0.16.0",
+    "redux-thunk": "^2.2.0"
   },
   "proxy": {
     "/api": {
@@ -27,7 +34,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "webpack-cli": "^2.0.12",
-    "webpack-dev-server": "^3.1.1"
+    "eslint": "^4.19.0",
+    "webpack-cli": "^2.0.12"
   }
 }

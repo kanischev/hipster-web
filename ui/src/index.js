@@ -1,8 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import {Provider} from 'react-redux';
+import AppRouter from "./routes/index";
+import registerServiceWorker from "./registerServiceWorker";
+import 'antd/dist/antd.min.css';
+import { createStore } from 'redux';
+import root from './reducers';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = createStore(
+    root
+);
+
+ReactDOM.render(
+    <Provider store={store}>
+        <AppRouter/>
+    </Provider>,
+    document.getElementById("root")
+);
+
 registerServiceWorker();

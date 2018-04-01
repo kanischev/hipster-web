@@ -1,0 +1,25 @@
+@import "~antd/dist/antd.less";
+
+.ant-form-item-label label::after {
+  content: "";
+  margin: 0 8px 0 2px;
+  position: relative;
+  top: -.5px;
+}
+
+.ant-form-item-required::after {
+  display: inline-block;
+  margin: 0 8px 0 2px;
+  position: relative;
+  top: -.5px;
+  color: @highlight-color;
+}
+
+/*
+    "build-css": "node-less-chokidar src",
+    "watch-css": "node-less-chokidar src --watch",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+*/
