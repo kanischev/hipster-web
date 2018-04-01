@@ -7,21 +7,21 @@
 }
 
 .login-form {
-    margin: -180px 0 0 -180px;
+    margin: -200px 0 0 -180px;
     width: 360px;
-    height: 360px;
+    height: 380px;
     padding: 36px;
 }
 
 .restore-password-form {
-    margin: -140px 0 0 -180px;
+    margin: -160px 0 0 -180px;
     width: 360px;
     height: 280px;
     padding: 36px;
 }
 
 .register-form {
-    margin: -240px 0 0 -270px;
+    margin: -270px 0 0 -240px;
     width: 480px;
     height: 540px;
     padding: 36px;

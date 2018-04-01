@@ -37,6 +37,8 @@ class AppLoginForm extends Component {
                         })(
                             <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" />
                         )}
+                    </FormItem>
+                    <FormItem>
                         {getFieldDecorator('remember', {
                             valuePropName: 'checked',
                             initialValue: true,

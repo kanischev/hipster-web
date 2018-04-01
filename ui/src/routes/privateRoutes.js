@@ -1,15 +1,19 @@
 import UserManagement from '../containers/private/UserManagement';
 import UserProfile from '../containers/private/UserProfile';
+import { menuGroups } from '../utils/Const'
 
 export default {
-    Login: {
+    profile: {
         component: UserProfile,
         path: '/profile',
+        group: menuGroups.sideMenuGroup,
         exact: true
     },
-    signUp: {
+    manageUsers: {
         component: UserManagement,
         path: '/userManagement',
+        group: menuGroups.sideMenuGroup,
+        roles: ['Admin'],
         exact: true
     },
 };

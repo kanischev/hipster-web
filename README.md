@@ -12,7 +12,10 @@ Backend:
  * ORM - Slick + Opinionated slick codegeneration integrated (goto codegen.GenTables class). For now should be run manually every time db structure changes.
 
 Frontend:
+ * Go to ui dir and do 'npm install'
+ * Run frontend with 'npm start'
  * React 0.16, react-redux, redux-saga
+ * Front end security
  * [Ant-design](https://ant.design/) for react [v. 3](https://github.com/ant-design/ant-design/)
 
 
