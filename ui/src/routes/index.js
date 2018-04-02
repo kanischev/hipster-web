@@ -36,16 +36,16 @@ export default class AppRouter extends Component {
                         const { component, path } = route;
                         return (
                             route.exact ?
-                                <Route
+                                <SecuredRoute
                                     exact
                                     path={path}
                                     key={key}
-                                    render={ (route) => <PublicLayout component={component} route={route}/>}
+                                    render={ (route) => <AdminLayout component={component} route={route}/>}
                                 /> :
-                                <Route
+                                <SecuredRoute
                                     path={path}
                                     key={key}
-                                    render={ (route) => <PublicLayout component={component} route={route}/>}
+                                    render={ (route) => <AdminLayout component={component} route={route}/>}
                                 />
                         )
                     }) }
